@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+*{
+    margin: 0;  /*Define a Margem */
+    padding: 0; /*Espaço interno entre o conteúdo e a borda do elemento.*/
+}
+
+.cabecalho{
+   padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu{
+   display: flex;
+   gap: 80px;
+}
+
+.cabecalho__menu__link{
+   font-family: 'Montserrat'sans-serif;
+   font-size: 24px;
+   font-weight: 600;
+   color: #00f5ff;
+   text-decoration: none;
+}
+
+body {
+    height: 100vh;  /* Altura do escopo */
+    box-sizing: border-box; 
+    align-items: center;  /*Tipo de alinhamento do texto*/
+    background-color: black; 
+    color: white; 
+}
+
+.imagem {
+   max-width: 30%; /* Tamanho maximo de largura*/
+    height: auto; /* tamanho da fonte ou imagem */
+    border-radius: 15px; /* Estiliza o borda */
+   margin: 3%; 
+  }
+
+  .apresentacao{
+   padding: 5% 15%;
+   display: flex; 
+   align-items: center;  
+   justify-content: space-between; 
+ }
+  
+.apresentacao__conteudo{
+    width: 615px; /* Tamanho da largura*/
+    display: flex; /* Controla o compartmneto do layout*/
+    flex-direction: column; /* Define em que direção vai ser os links, textos e etc...*/
+    gap: 40px; /* Tamanho do espaçamento entre textos, links, margens e etc...*/
+ }
+
+ .apresentacao__conteudo__titulo{
+    font-size: 36px; 
+    font-family: krona one, sans-serif; 
+ }
+
+ .apresentacao__conteudo__texto{
+    font-size: 26px; 
+    font-family: montserra, sans-serif; 
+ }
+
+ .apresentacao__links{
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+   gap: 32px; /* Tamanho do espaçamento entre as linhas */
+   justify-content: space-between; 
+}
+.apresentacao__links__link{ 
+   border: 2px solid  #00f5ff;
+   display: flex;
+   justify-content: center;
+   gap: 16px;
+   border: 2px sold #22d4fd;
+   width: 378px;
+   text-align: center; /* Tipo de alinhamento do texto */
+   border-radius: 8px;  /* Estilizar a borda, ex, arrendondar a borda*/
+   font-size: 24px;  /* Tamanho da fonte */
+   font-weight: 600;
+   padding: 21,5px 0;  /* Espaçamento interno entre o conteúdo da borda*/
+   text-decoration: none; /* Decoração do texto*/
+   color: white; 
+   font-family: montserra, sans-serif;
+}
+.apresentacao__links__link:hover{
+  background-color: gray;
+}
+
+.titulo-destaque{
+    color: #00f5ff;
+}
+
+
+.rodape{
+   padding: 24px;
+   color: black;
+   background-color: #00f5ff;
+   text-align: center;
+   font-family: 'Montserrat'sans-serif;
+   font-size: 24px;
+   font-weight: 400;
+}
+
+.pdf-image{
+   max-width: 30%; /* Tamanho maximo de largura*/
+    height: auto; /* tamanho da fonte ou imagem */
+    border-radius: 15px; /* Estiliza o borda */
+   margin: 3%; 
+}
