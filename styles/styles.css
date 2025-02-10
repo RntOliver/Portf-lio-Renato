@@ -4,6 +4,7 @@
    --cor-primaria: #000000;
    --cor-secundaria: #EEEEEE;
    --cor-terciaria: #6EACDA;
+   --cor-hover: gray ;
 
    --fonte-primaria: 'krona one', sans-serif ;
    --fonte-secundaria: 'Montserrat' ,sans-serif ; 
@@ -32,6 +33,10 @@
    border: 2px solid var(--cor-terciaria);
    padding: 8px;
    text-align: center;
+}
+
+.cabecalho__menu__link:hover{
+   background-color: var(--cor-hover);
 }
 
 body {
@@ -96,7 +101,7 @@ body {
    font-family: var(--fonte-secundaria);
 }
 .apresentacao__links__link:hover{
-  background-color: gray;
+  background-color: var(--cor-hover);
 }
 
 .titulo-destaque{
