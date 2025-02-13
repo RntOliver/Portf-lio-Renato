@@ -26,10 +26,11 @@
 
 .cabecalho__menu__link{
    font-family: var(--cor-secundaria);
-   font-size: 24px;
+   font-size: 1.5rem;
    font-weight: 600;
    color: var(--cor-secundaria);
-   text-decoration: none;
+   text-decoration-line:line ;
+   text-decoration-color: var(--cor-terciaria);
    border: 2px solid var(--cor-terciaria);
    padding: 8px;
    text-align: center;
@@ -48,8 +49,9 @@ body {
 }
 
 .imagem {
-   max-width: 30%; /* Tamanho maximo de largura*/
+   width: 50%; /* Tamanho maximo de largura*/
     height: auto; /* tamanho da fonte ou imagem */
+    border:3px solid var(--cor-terciaria);
     border-radius: 15px; /* Estiliza o borda */
    margin: 3%; 
   }
@@ -59,23 +61,25 @@ body {
    display: flex; 
    align-items: center;  
    justify-content: space-between; 
+   gap: 86px;
  }
   
 .apresentacao__conteudo{
-    width: 615px; /* Tamanho da largura*/
+    width: 50%; /* Tamanho da largura*/
     display: flex; /* Controla o compartmneto do layout*/
     flex-direction: column; /* Define em que direção vai ser os links, textos e etc...*/
     gap: 40px; /* Tamanho do espaçamento entre textos, links, margens e etc...*/
  }
 
  .apresentacao__conteudo__titulo{
-    font-size: 36px; 
+    font-size: 2.25rem; 
     font-family: var(--fonte-primaria) 
  }
 
  .apresentacao__conteudo__texto{
     font-size: 26px; 
-    font-family: var(--fonte-secundaria); 
+    font-family: var(--fonte-secundaria);
+     
  }
 
  .apresentacao__links{
@@ -90,10 +94,10 @@ body {
    display: flex;
    justify-content: center;
    gap: 16px;
-   width: 378px;
+   width: 50%;
    text-align: center; /* Tipo de alinhamento do texto */
    border-radius: 8px;  /* Estilizar a borda, ex, arrendondar a borda*/
-   font-size: 24px;  /* Tamanho da fonte */
+   font-size: 1.5rem;  /* Tamanho da fonte */
    font-weight: 600;
    padding: 21,5px 0;  /* Espaçamento interno entre o conteúdo da borda*/
    text-decoration: none; /* Decoração do texto*/
@@ -115,13 +119,26 @@ body {
    background-color: var(--cor-terciaria);
    text-align: center;
    font-family: var(--fonte-secundaria);
-   font-size: 24px;
+   font-size: 1.5rem;
    font-weight: 400;
 }
 
-.pdf-image{
-   max-width: 30%; /* Tamanho maximo de largura*/
-    height: auto; /* tamanho da fonte ou imagem */
-    border-radius: 15px; /* Estiliza o borda */
-   margin: 3%; 
+@media (max-width: 1200px){
+   
+   .cabecalho{
+      padding: 10%;
+   }
+
+   .cabecalho__menu{
+      justify-content: center;
+   }
+
+   .apresentacao{
+      flex-direction: column-reverse;
+      padding: 5%;
+   }
+
+   .apresentacao__conteudo{
+      width: auto;
+   }
 }
