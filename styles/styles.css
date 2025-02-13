@@ -49,7 +49,7 @@ body {
 }
 
 .imagem {
-   width: 30%; /* Tamanho maximo de largura*/
+   width: 40%; /* Tamanho maximo de largura*/
     height: auto; /* tamanho da fonte ou imagem */
     border:3px solid var(--cor-terciaria);
     border-radius: 15px; /* Estiliza o borda */
